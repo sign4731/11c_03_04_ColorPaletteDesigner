@@ -1,0 +1,13 @@
+.colorBox {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  background-color: #000000;
+  margin: 20px 0;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+}
