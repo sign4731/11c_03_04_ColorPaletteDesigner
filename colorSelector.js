@@ -40,6 +40,9 @@ function showRGB(r, g, b) {
 }
 
 function rgbToHSL(r, g, b) {
+  r /= 255;
+  g /= 255;
+  b /= 255;
   let h, s, l;
 
   const min = Math.min(r, g, b);

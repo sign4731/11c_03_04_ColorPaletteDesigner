@@ -6,6 +6,12 @@
   margin: 20px 0;
 }
 
+.cssBox {
+  width: 100px;
+  height: 20px;
+  background-color: #000000;
+}
+
 main {
   width: 100vw;
   display: flex;
