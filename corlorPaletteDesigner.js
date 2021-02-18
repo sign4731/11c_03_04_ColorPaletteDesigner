@@ -40,21 +40,26 @@ function getHarmony(hsl, rgb) {
   } else if (harmony == "monochromatic") {
     console.log("harmony is monochromatic");
     const monoHslColors = calcMonocromaticColors(hsl);
-    showColoredBoxes(monoHslColors, hsl);
+    const monochromatigRgbColors = hslToRgb(monoHslColors, rgb);
+    showColoredBoxes(monoHslColors, rgb);
   } else if (harmony == "triad") {
     console.log("harmony is triad");
     const triadHslColors = calcTriadColors(hsl);
-    showColoredBoxes(triadHslColors, hsl);
+    const triadRgbColors = hslToRgb(triadHslColors, rgb);
+    showColoredBoxes(triadHslColors, rgb);
     // console.log(triadColorArr);
   } else if (harmony == "complementary") {
     const complementaryHslColors = calcComplementaryColors(hsl);
+    const complementaryRgbColors = hslToRgb(complementaryHslColors, rgb);
     showColoredBoxes(complementaryHslColors, hsl);
   } else if (harmony == "compound") {
     const compoundHslColors = calcCompoundColors(hsl);
-    showColoredBoxes(compoundHslColors, hsl);
+    const compoundRgbColors = hslToRgb(compoundHslColors, rgb);
+    showColoredBoxes(compoundHslColors, rgb);
   } else if (harmony == "shades") {
     const shadesHslColors = calcShadesColors(hsl);
-    showColoredBoxes(shadesHslColors, hsl);
+    const shadesRgbColors = hslToRgb(shadesHslColors, rgb);
+    showColoredBoxes(shadesHslColors, rgb);
   }
 }
 
