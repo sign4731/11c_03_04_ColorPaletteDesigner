@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Palette Designer</title>
+    <style>
+      #colors {
+        display: flex;
+        margin: 0 auto;
+        width: 80%;
+      }
+
+      .colorselector {
+        display: block;
+        margin: 100px auto;
+        width: 200px;
+      }
+
+      #harmonies {
+        display: block;
+        width: 600px;
+        margin: 20px auto;
+      }
+
+      .colorbox {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="harmonies">
+      <label><input type="radio" name="harmony" value="analogous" checked />Analogous</label>
+      <label><input type="radio" name="harmony" value="monochromatic" />Monochromatic</label>
+      <label><input type="radio" name="harmony" value="triad" />Triad</label>
+      <label><input type="radio" name="harmony" value="complementary" />Complementary</label>
+      <label><input type="radio" name="harmony" value="compound" />Compound</label>
+      <label><input type="radio" name="harmony" value="shades" />Shades</label>
+    </div>
+
+    <label class="colorselector">
+      Select a color:
+      <input type="color" id="colorPicker" />
+    </label>
+
+    <div id="colors">
+      <div id="color1">
+        <div class="colorbox"></div>
+        <div class="hex">hex: <span class="value"></span></div>
+        <div class="rgb">rgb: <span class="value"></span></div>
+        <div class="hsl">hsl: <span class="value"></span></div>
+      </div>
+      <div id="color2">
+        <div class="colorbox"></div>
+        <div class="hex">hex: <span class="value"></span></div>
+        <div class="rgb">rgb: <span class="value"></span></div>
+        <div class="hsl">hsl: <span class="value"></span></div>
+      </div>
+      <div id="color3">
+        <div class="colorbox"></div>
+        <div class="hex">hex: <span class="value"></span></div>
+        <div class="rgb">rgb: <span class="value"></span></div>
+        <div class="hsl">hsl: <span class="value"></span></div>
+      </div>
+      <div id="color4">
+        <div class="colorbox"></div>
+        <div class="hex">hex: <span class="value"></span></div>
+        <div class="rgb">rgb: <span class="value"></span></div>
+        <div class="hsl">hsl: <span class="value"></span></div>
+      </div>
+      <div id="color5">
+        <div class="colorbox"></div>
+        <div class="hex">hex: <span class="value"></span></div>
+        <div class="rgb">rgb: <span class="value"></span></div>
+        <div class="hsl">hsl: <span class="value"></span></div>
+      </div>
+    </div>
+
+    <script src="corlorPaletteDesigner.js"></script>
+  </body>
+</html>
